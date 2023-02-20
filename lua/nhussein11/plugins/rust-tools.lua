@@ -22,6 +22,18 @@ rt.setup({
 			vim.keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", { buffer = bufnr }) -- jump to next diagnostic in buffer
 			vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", { buffer = bufnr }) -- show documentation for what is under cursor
 			vim.keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", { buffer = bufnr }) -- see outline on right hand side
+
+			-- set rust fmt keymap
+			vim.keymap.set("n", "<leader>fd", "<cmd>RustFmt<CR>", { buffer = bufnr })
+			-- set rust run keymap
+			vim.keymap.set("n", "<leader>rR", "<cmd>RustRun<CR>", { buffer = bufnr })
+			-- set rust runnables keymap
+			vim.keymap.set("n", "<leader>rr", "<cmd>RustRunnables<CR>", { buffer = bufnr })
+			-- set rust test keymap
+			vim.keymap.set("n", "<leader>rt", "<cmd>belowright vert 50RustTest<CR>", { buffer = bufnr })
+
+			-- set rust tests keymap
+			vim.keymap.set("n", "<leader>rT", "<cmd>belowright vert 50RustTest!<CR>", { buffer = bufnr })
 		end,
 	},
 })

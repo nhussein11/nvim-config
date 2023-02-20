@@ -83,8 +83,9 @@ return packer.startup(function(use)
 	}) -- enhanced lsp uis
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
+	-- rust tooling
 	use("simrat39/rust-tools.nvim") -- rust tooling
-
+	use("rust-lang/rust.vim")
 	-- formatting & linteng
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
