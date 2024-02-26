@@ -36,3 +36,6 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
 -- typescript keymaps
 keymap.set("n", "<leader>oi", "<cmd>TypescriptOrganizeImports<cr>")
+
+--lazygit 
+keymap.set("n", "<leader>lg", "<cmd>LazyGit<cr>")
